@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Be My Valentine?</title>
+        <style>
+
+        p {
+            color: aliceblue;
+            font-size: 50px;
+            
+        }
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-image: url(Love.webp) ;
+        }
+        
+        .container {
+            margin-top: 50px;
+        }
+        
+        button {
+            padding: 15px 25px;
+            font-size: 21px;
+            margin: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #yes {
+            background-color: #008000; /* Green */
+            color: white;
+        }
+        
+        #no {
+            background-color: #ff0000; /* Red */
+            color: white;
+        }
+        </style>
+
+        </head>
+
+        <body>
+            <image src="rose.gif"></image>
+        
+        <div class="container">
+            <p>Hi, Be My Valentine?</p>
+            <button id="yes" style:>Yes</button>
+            <button id="no">No</button>
+        </div>
+        <script>
+            const yesButton = document.getElementById('yes');
+            const noButton = document.getElementById('no');
+
+            noButton.addEventListener('click', () => {
+              window.location.href = "no2.html"; 
+            });
+            yesButton.addEventListener('click', () => {
+              window.location.href = "yes.html"; 
+            });
+          </script>
+    
+        
+        </body>
+</html>

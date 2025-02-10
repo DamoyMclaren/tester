@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Be My Valentine?</title>
+        <style>
+
+        p {
+            color: aliceblue;
+            font-size: 50px;
+            
+        }
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-image: url(Love.webp) ;
+        }
+        
+        .container {
+            margin-top: 50px;
+        }
+        
+        button {
+            padding: 25px 35px;
+            font-size: 28px;
+            margin: 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #yes {
+            background-color: #008000; /* Green */
+            color: white;
+        }
+        
+        #no {
+            background-color: #ff0000; /* Red */
+            color: white;
+        }
+        </style>
+
+        </head>
+
+        <body>
+            <image src="nosey.gif"></image>
+        
+        <div class="container">
+            <p>Hmm that shouldnt happen, press the correct one again</p>
+            <button type ="button"id="yes">Yes</button>
+            <button type ="button"id="no">No</button>
+        </div>
+        <script>
+            const yesButton = document.getElementById('yes');
+            const noButton = document.getElementById('no');
+
+            noButton.addEventListener('click', () => {
+              window.location.href = "no4.html"; 
+            });
+            yesButton.addEventListener('click', () => {
+              window.location.href = "yes.html"; 
+            });
+          </script>
+    
+        
+        </body>
+</html>
